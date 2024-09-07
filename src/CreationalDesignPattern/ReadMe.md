@@ -133,5 +133,5 @@ Example can be found in source package.
 3. Factory: This is an interface or abstract class **(RestaurantFactory)** responsible for declaring the factory method, which creates objects of the Product type.
 4. Concrete Factory: These are the classes that implement the Factory interface or extend the Factory abstract class.**(VegBurgerRestraunt/NonVegBurgerRestraunt)** They override the factory method to produce specific instances of Product.
 
-[//]: # (<img height="40%" src="/Users/mohdshayanansari/Desktop/Screenshot 2024-09-08 at 4.09.54 AM.png" width="50%"/>)
+<img height="40%" src="/Users/mohdshayanansari/Desktop/Screenshot 2024-09-08 at 4.09.54 AM.png" width="50%"/>
 
