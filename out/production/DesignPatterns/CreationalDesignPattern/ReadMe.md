@@ -121,7 +121,17 @@ public class Car {
 
 
 ## Factory Design Pattern
+The Factory Pattern is a design pattern that simplifies object creation (abstract the object creation logic). Instead of creating objects directly in your code, the pattern lets you use a factory (a special class or method) to handle the creation.
+Rather than instantiating objects directly in your code, the responsibility for object creation is delegated to a specialized “factory” class.
+This way, you don’t need to know the specific details of how the object is made—just ask the factory for the object, and it will give you the right one.
 
+Example can be found in source package.
 
+**Primary Components**
+1. Product: This is an interface or abstract class **(BURGER)** that defines the type of objects to be created.
+2. Concrete Product: These are the classes that implement the Product interface or extend the Product abstract class. They represent the actual objects **(VegBurger/NonVegBurger)** created by the factory.
+3. Factory: This is an interface or abstract class **(RestaurantFactory)** responsible for declaring the factory method, which creates objects of the Product type.
+4. Concrete Factory: These are the classes that implement the Factory interface or extend the Factory abstract class.**(VegBurgerRestraunt/NonVegBurgerRestraunt)** They override the factory method to produce specific instances of Product.
 
+<img height="50%" src="https://raw.githubusercontent.com/shayan-mohd/DesignPatterns/main/src/img/UML%20Factory%20Pattern.png" width="60%"/>
 
