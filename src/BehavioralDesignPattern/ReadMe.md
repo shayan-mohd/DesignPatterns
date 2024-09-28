@@ -49,4 +49,5 @@ State Design Pattern is a Behavioral Design Pattern which lets object change its
 the corresponding state class.
 
 This pattern is particularly useful when an object’s behavior depends on its state, and the state can change during the object’s lifecycle.
+
 <img height="50%" src="https://raw.githubusercontent.com/shayan-mohd/DesignPatterns/main/src/img/UML%20Factory%20Pattern.png" width="60%"/>
