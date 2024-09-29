@@ -66,7 +66,7 @@ It’s often declared as final to prevent subclasses from changing the algorithm
 Abstract (or Hook) Methods: These are methods declared within the abstract class but not implemented.
 Subclasses must provide concrete implementations for these methods to complete the algorithm.
 
-<img height="50%" src="https://raw.githubusercontent.com/shayan-mohd/DesignPatterns/refs/heads/main/src/img/state%20design%20component%20diagram.webp" width="60%"/>
+<img height="50%" src="https://raw.githubusercontent.com/shayan-mohd/DesignPatterns/refs/heads/main/out/production/DesignPatterns/img/TemplateDesignComponent.png" width="60%"/>
 
 ### **Mediator Design Pattern**
 
@@ -79,7 +79,7 @@ Component of Mediator
 1) Mediator: The Mediator interface defines the communication contract, specifying methods that concrete mediators should implement to facilitate interactions among colleagues.
 2) Colleague: Colleague classes are the components or objects that interact with each other. They communicate through the Mediator, and each colleague class is only aware of the mediator, not the other colleagues. 
 
-<img height="50%" src="https://raw.githubusercontent.com/shayan-mohd/DesignPatterns/refs/heads/main/src/img/state%20design%20component%20diagram.webp" width="60%"/>
+<img height="50%" src="https://raw.githubusercontent.com/shayan-mohd/DesignPatterns/refs/heads/main/out/production/DesignPatterns/img/Mediator%20Design%20PAttern%20component.png" width="60%"/>
 
 
 ### **Command Design Pattern**

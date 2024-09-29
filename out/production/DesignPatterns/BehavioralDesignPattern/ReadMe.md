@@ -5,7 +5,7 @@ BDP describe not just pattern of object/classes but also the patterns of communi
 ## Types of Behavioral Design Pattern
 1) Chain of Responsibility
 2) Strategy Design Pattern
-3) Observer Design Pattern *
+3) Observer Design Pattern 
 4) Template Method Design Pattern
 5) Iterator Design Pattern
 6) State Design Pattern 
@@ -39,9 +39,8 @@ Components of Strategy Design Pattern
 1) **Context** - A context is a class which holds a reference to a strategy objects and delegates the task to it. It acts as an interface between the client and the strategy, providing a unified way to execute the task
 without knowing the details of how it's done.
 2) **Strategy Interface** - It's an interface/abstract class that defines set of methods that all concrete strategies implement.
-3) **Concrete Strategies** - 
-4) **Client** - 
-5) 
+3) **Concrete Strategies** - Concrete Strategies are the various implementations of the Strategy Interface. Each concrete strategy provides a specific algorithm or behavior for performing the task defined by the Strategy Interface.
+4) **Client** 
 
 ### **State Design Pattern**
 
@@ -67,7 +66,7 @@ It’s often declared as final to prevent subclasses from changing the algorithm
 Abstract (or Hook) Methods: These are methods declared within the abstract class but not implemented.
 Subclasses must provide concrete implementations for these methods to complete the algorithm.
 
-<img height="50%" src="https://raw.githubusercontent.com/shayan-mohd/DesignPatterns/refs/heads/main/src/img/state%20design%20component%20diagram.webp" width="60%"/>
+<img height="50%" src="https://raw.githubusercontent.com/shayan-mohd/DesignPatterns/refs/heads/main/out/production/DesignPatterns/img/TemplateDesignComponent.png" width="60%"/>
 
 ### **Mediator Design Pattern**
 
@@ -80,7 +79,7 @@ Component of Mediator
 1) Mediator: The Mediator interface defines the communication contract, specifying methods that concrete mediators should implement to facilitate interactions among colleagues.
 2) Colleague: Colleague classes are the components or objects that interact with each other. They communicate through the Mediator, and each colleague class is only aware of the mediator, not the other colleagues. 
 
-<img height="50%" src="https://raw.githubusercontent.com/shayan-mohd/DesignPatterns/refs/heads/main/src/img/state%20design%20component%20diagram.webp" width="60%"/>
+<img height="50%" src="https://raw.githubusercontent.com/shayan-mohd/DesignPatterns/refs/heads/main/out/production/DesignPatterns/img/Mediator%20Design%20PAttern%20component.png" width="60%"/>
 
 
 ### **Command Design Pattern**
@@ -97,3 +96,12 @@ Components of Command
 3)  Invoker (Remote Control): The Invoker, often a remote control, is the one responsible for initiating command execution. It holds a reference to a command but doesn’t delve into the specifics of how each command works. It’s like a button that, when pressed, makes things happen. 
 4) Receiver: The Receiver is the device that knows how to perform the actual operation associated with a command. It could be a TV, stereo, or any other device. 
 
+
+### **Observer Design Pattern**
+Observer design pattern is useful when you are interested in the state of an object and want to get notified whenever there is any change.
+The Observer Design Pattern is like a “subscribe and notify” system. Imagine you’re subscribing to news updates from different websites. 
+Whenever there’s new news, each website sends you an update because you’re on their subscriber list.
+
+In observer pattern, the object that watch on the state of another object are called Observer and the object that is being watched is called Subject.
+
+The key idea is that the subject doesn’t need to know who all the observers are, and observers automatically get updates when something changes. This pattern decouples the subject from its observers, allowing for easy scalability and flexibility.
